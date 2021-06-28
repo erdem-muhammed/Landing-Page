@@ -6,6 +6,7 @@
 {
     --orange: #DFB244;
     --darkpink: #DB13B2;
+    --lightpink: rgb(235, 103, 202);
 }
 body
 {
@@ -15,7 +16,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
 .container
 {
@@ -24,6 +25,91 @@ body
     text-align: center;
     border: 1px solid black;
     display: flex;
+    position: relative;
+}
+.grey
+{
+    width: 47%;
+    height: 80%;
+    background-color: #e0e0e0;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#text1
+{
+    color: var(--orange);
+    position: absolute;
+    text-align: start;
+    display: block;
+    font-size: 2.5em;
+    margin-top: 80px;
+    font-weight: bold;
+}
+#text1 span
+{
+    color: var(--darkpink);
+}
+#text2
+{
+    position: absolute;
+    text-align: start;
+    display: block;
+    font-size: 1.0em;
+    margin-top: 200px;
+    font-weight: bold;
+    color: #111;
+}
+#text2 span
+{
+    color: var(--lightpink);
+}
+#searchInput
+{
+    position: absolute;
+    margin-top: 120px;
+    right: 8vw;
+}
+#searchInput input
+{
+    width: 450px;
+    padding: 18px 30px 18px 40px;
+    border-radius: 25px;
+    border: 1px solid #eeecec;
+    outline: none;
+    border-right: none;
+    color: #111;
+}
+::placeholder
+{
+    color: #c5bebe;
+    font-size: 0.9em;
+}
+#searchInput button
+{
+    padding: 15px 50px;
+    background-color: var(--darkpink);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+#searchInput button img
+{
+    height: 20px;
+}
+#text3
+{
+    color: var(--lightpink);
+    position: absolute;
+    right: 8vw;
+    margin-top: 200px;
+    line-height: 1.4em;
+    font-weight: 600;
 }
 .gap
 {
@@ -45,8 +131,9 @@ body
 }
 #DD
 {
-    width: 70px;
+    width: 75px;
     height: 60px;
+    cursor: pointer;
 }
 .links
 {
@@ -69,10 +156,19 @@ body
 {
     margin-right: 10px;
     height: 32px;
+    cursor: pointer;
 }
 #menupng
 {
     margin: 3px 0 0 10px;
     height: 28px;
     width: 35px;
+    cursor: pointer;
+}
+.content
+{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    padding: 100px 0;
 }
