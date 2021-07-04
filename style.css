@@ -15,17 +15,28 @@ body
     background-color: rgb(235, 103, 202);
     height: 150vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-family: sans-serif;
 }
+.box
+{
+    height: 100%;
+    width: 98vw;
+    background-color: var(--lightpink);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container
 {
-    height: 100vh;
-    width: 80vw;
+    height: 130vh;
+    width: 90vw;
     text-align: center;
     display: flex;
     position: relative;
+    box-shadow: 0px 23px 34px -4px rgba(0,0,0,0.56);
+    margin: 100px 0;
 }
 .grey
 {
@@ -44,7 +55,7 @@ body
     position: absolute;
     text-align: start;
     display: block;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 80px;
     font-weight: bold;
 }
@@ -57,7 +68,7 @@ body
     position: absolute;
     text-align: start;
     display: block;
-    font-size: 1.0em;
+    font-size: 0.7em;
     margin-top: 200px;
     font-weight: bold;
     color: #111;
@@ -110,6 +121,7 @@ body
     margin-top: 200px;
     line-height: 1.4em;
     font-weight: 600;
+    font-size: 0.8em;
 }
 .gap
 {
@@ -119,7 +131,7 @@ body
 }
 .menu-bar
 {
-    width: 80vw;
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -146,7 +158,8 @@ body
 {
     color: var(--orange);
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 #donuts
 {
@@ -197,18 +210,18 @@ body
 }
 .cardBox .card .productImg
 {
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
 }
 .card .bewertungImg
 {
-    width: 70px;
-    height: 70px;
+    width: 30%;
+    height: 30%;
 }
 .cardBox .card .nutrition
 {
     width: 100px;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 .card .nutrition>div
 {
@@ -223,6 +236,6 @@ body
 {
     margin-top: 20px;
     color: var(--orange);
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: bold;
 }
